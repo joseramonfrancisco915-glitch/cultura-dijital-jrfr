@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones Eléctricas Residenciais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instalaciones Eléctricas</h1>
+        <p>Conceptos básicos, componentes y seguridad en el hogar</p>
+    </header>
+
+    <nav>
+        <a href="#conceptos">Conceptos</a>
+        <a href="#componentes">Componentes</a>
+        <a href="#calculadora">Calculadora de Potencia</a>
+        <a href="#seguridad">Seguridad</a>
+    </nav>
+
+    <main class="container">
+        
+        <section id="conceptos" class="card">
+            <h2>Conceptos Fundamentales</h2>
+            <p>Una instalación eléctrica es el conjunto de circuitos que permiten distribuir la energía eléctrica desde el punto de suministro hasta los puntos de consumo (luces, electrodomésticos, etc.) de forma segura y eficiente.</p>
+            <ul>
+                <li><strong>Voltaje (V):</strong> La tensión o fuerza que empuja los electrones (medido en Voltios). En hogares suele ser de 110V o 220V.</li>
+                <li><strong>Corriente (I):</strong> El flujo de electrones que pasa por un conductor (medido en Amperios).</li>
+                <li><strong>Potencia (P):</strong> La cantidad de energía que consume un artefacto por unidad de tiempo (medido en Watts o Vatios).</li>
+            </ul>
+        </section>
+
+        <section id="componentes" class="card">
+            <h2>Componentes Principales</h2>
+            <div class="grid-components">
+                <div class="component-item">
+                    <h3>Tablero General (Caja de Breakers)</h3>
+                    <p>Es el centro de control. Distribuye la corriente a los diferentes circuitos de la casa y protege la instalación de sobrecargas.</p>
+                </div>
+                <div class="component-item">
+                    <h3>Conductores (Cables)</h3>
+                    <p>Transportan la electricidad. Se dividen por calibres (grosor) según la corriente que vayan a soportar (Fase, Neutro y Tierra).</p>
+                </div>
+                <div class="component-item">
+                    <h3>Interruptores y Tomas</h3>
+                    <p>Los interruptores abren o cierran el circuito para encender luces. Los tomacorrientes permiten conectar los aparatos eléctricos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculadora" class="card">
+            <h2>Calculadora de Potencia Eléctrica</h2>
+            <p>Introduce el voltaje de tu hogar y la corriente de un aparato para calcular su consumo en Watts.</p>
+            <div class="form-group">
+                <label for="voltaje">Voltaje (V):</label>
+                <input type="number" id="voltaje" value="120">
+            </div>
+            <div class="form-group">
+                <label for="corriente">Corriente (Amperios):</label>
+                <input type="number" id="corriente" placeholder="Ej. 5">
+            </div>
+            <button onclick="calcularPotencia()">Calcular Potencia</button>
+            <div id="resultado" class="result-box"></div>
+        </section>
+
+        <section id="seguridad" class="card">
+            <h2>Reglas de Seguridad Críticas</h2>
+            <p class="warning">⚠️ La electricidad puede ser peligrosa. Sigue siempre estas normas:</p>
+            <ol>
+                <li><strong>Baja el interruptor principal</strong> antes de realizar cualquier reparación o cambio.</li>
+                <li><strong>Nunca trabajes con las manos húmedas</strong> o sobre superficies mojadas.</li>
+                <li><strong>Usa herramientas aisladas</strong> correctamente certificadas.</li>
+                <li><strong>No sobrecargues los tomacorrientes</strong> con demasiados adaptadores.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal de Electricidad Educativa. Diseñado con fines informativos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
